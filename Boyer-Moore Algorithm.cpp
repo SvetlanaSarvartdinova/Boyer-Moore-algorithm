@@ -69,7 +69,7 @@ void BMalgorithm(vector<char> str, vector<char> pat, int n, int m)
 
     unsigned int end_time = clock();
 
-    cout<<"Time:" << end_time - start_time << " mls" << endl;
+    cout<<"Time:" << end_time - start_time << " ticks" << endl;
 }
 
 void Generate(int n, int m)
@@ -99,7 +99,7 @@ int main()
     cin >> n;
     cout << "Input pattern size:";
     cin >> m;
-    if (n > m && n > 0 && m > 0) Generate(n, m);
+    if (n >= m && n > 0 && m > 0) Generate(n, m);
     else cout << "Wrong input";
 	return 0;
 }
